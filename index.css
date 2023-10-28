@@ -1,0 +1,48 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arbutus Slab', cursive;
+}
+
+#main-logo {
+    margin-left: 20px;
+    margin-top: 10px;
+    display: block;
+}
+
+#main-menu {
+    padding-left: 20px;
+    color: #0f3c4c;
+}
+
+.menu-line-one {
+    display: flex;
+    margin-bottom: -30px;
+}
+
+.item-name {
+    display: block;
+    width: 300px;
+}
+
+.item-price {
+    display: block;
+    width: 100px;
+    color: #fcba03;
+    font-family: 'Delicious Handrawn';
+}
+
+.menu-item {
+    display: block;
+    margin-left: 20px;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.item-description {
+    
+}
+
+font-family: 'Arbutus Slab', serif;
+font-family: 'Delicious Handrawn', cursive;
+font-family: 'Just Another Hand', cursive;
