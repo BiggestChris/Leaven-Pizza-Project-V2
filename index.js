@@ -15,7 +15,7 @@ onValue(pizzaInDB, function(snapshot) {
 
     let itemsArray = Object.entries(snapshot.val());
 
-    let itemTitle = itemsArray[0].name
+    let itemTitle = itemsArray[0][1].name
 
 
     testBlock.innerHTML = 
