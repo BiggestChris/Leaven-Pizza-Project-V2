@@ -16,7 +16,22 @@ onValue(pizzaInDB, function(snapshot) {
     let itemsArray = Object.entries(snapshot.val())
     console.log(itemsArray[0][1])
     
-    let item1 = itemsArray[0][1];
+    for (let i = 0; i < itemsArray.length; i++) {
+        let item = itemsArray[i][1];
+
+        testBlock.innerHTML += 
+        `
+        <div class="menu-line-one">
+            <h3 class="item-name">${item.name}</h3>
+            <h3 class="item-price">£${item.price}</h3>
+        </div>
+        <p class="item-description">${item.description}</p>
+        ${item.code}
+        `;
+
+    }
+
+    /* let item1 = itemsArray[0][1];
 
     testBlock.innerHTML += 
         `
@@ -39,5 +54,6 @@ onValue(pizzaInDB, function(snapshot) {
         <p class="item-description">${item2.description}</p>
         ${item2.code}
         `
+    */
 
 });
