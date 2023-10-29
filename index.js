@@ -11,17 +11,20 @@ const pizzaInDB = ref(database, "Menu");
 
 const testBlock = document.getElementById("test-block");
 
-// let itemsArray = Object.entries(snapshot.val());
-// console.log(itemsArray);
+onValue(pizzaInDB, function(snapshot) {
 
-// let itemTitle = itemsArray[0].name
+    let itemsArray = Object.entries(snapshot.val());
+
+    let itemTitle = itemsArray[0].name
 
 
-testBlock.innerHTML = 
-    `
-    <div class="menu-line-one">
-        <h3 class="item-name">Testing</h3>
-        <h3 class="item-price">£X</h3>
-    </div>
-    <p class="item-description">TESTING</p>
-    `
+    testBlock.innerHTML = 
+        `
+        <div class="menu-line-one">
+            <h3 class="item-name">${itemTitle}</h3>
+            <h3 class="item-price">£X</h3>
+        </div>
+        <p class="item-description">TESTING</p>
+        `
+
+});
