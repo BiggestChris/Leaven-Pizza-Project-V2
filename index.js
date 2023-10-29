@@ -22,9 +22,10 @@ onValue(pizzaInDB, function(snapshot) {
         `
         <div class="menu-line-one">
             <h3 class="item-name">${item.name}</h3>
-            <h3 class="item-price">£X</h3>
+            <h3 class="item-price">£${item.price}</h3>
         </div>
-        <p class="item-description">TESTING</p>
+        <p class="item-description">${item.description}</p>
+        ${item.code}
         `
 
 });
