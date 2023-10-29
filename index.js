@@ -11,10 +11,10 @@ const pizzaInDB = ref(database, "Menu");
 
 const testBlock = document.getElementById("test-block");
 
-let itemsArray = Object.entries(snapshot.val());
-console.log(itemsArray);
+// let itemsArray = Object.entries(snapshot.val());
+// console.log(itemsArray);
 
-let itemTitle = itemsArray[0].name
+// let itemTitle = itemsArray[0].name
 
 
 testBlock.innerHTML = 
