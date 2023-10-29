@@ -16,16 +16,28 @@ onValue(pizzaInDB, function(snapshot) {
     let itemsArray = Object.entries(snapshot.val())
     console.log(itemsArray[0][1])
     
-    let item = itemsArray[0][1];
+    let item1 = itemsArray[0][1];
 
-    testBlock.innerHTML = 
+    testBlock.innerHTML += 
         `
         <div class="menu-line-one">
-            <h3 class="item-name">${item.name}</h3>
-            <h3 class="item-price">£${item.price}</h3>
+            <h3 class="item-name">${item1.name}</h3>
+            <h3 class="item-price">£${item1.price}</h3>
         </div>
-        <p class="item-description">${item.description}</p>
-        ${item.code}
+        <p class="item-description">${item1.description}</p>
+        ${item1.code}
+        `
+
+    let item2 = itemsArray[1][1];
+
+    testBlock.innerHTML += 
+        `
+        <div class="menu-line-one">
+            <h3 class="item-name">${item2.name}</h3>
+            <h3 class="item-price">£${item2.price}</h3>
+        </div>
+        <p class="item-description">${item2.description}</p>
+        ${item2.code}
         `
 
 });
