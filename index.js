@@ -11,9 +11,12 @@ const pizzaInDB = ref(database, "Menu");
 
 const testBlock = document.getElementById("test-block");
 
-onValue(pizzaInDB.child('Menu/1'), function(snapshot) {
+onValue(pizzaInDB, function(snapshot) {
 
-    let item = snapshot.val();
+    let itemsArray = Object.entries(snapshot.val())
+    console.log(itemsArray[0][1])
+    
+    let item = itemsArray[0][1];
 
     testBlock.innerHTML = 
         `
