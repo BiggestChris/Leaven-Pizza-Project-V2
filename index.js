@@ -14,6 +14,8 @@ const testBlock = document.getElementById("test-block");
 let itemsArray = Object.entries(snapshot.val());
 console.log(itemsArray);
 
+let itemTitle = itemsArray[0].name
+
 
 testBlock.innerHTML = 
     `
