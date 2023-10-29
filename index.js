@@ -21,7 +21,7 @@ onValue(pizzaInDB, function(snapshot) {
     testBlock.innerHTML = 
         `
         <div class="menu-line-one">
-            <h3 class="item-name">${itemTitle}</h3>
+            <h3 class="item-name">Testing</h3>
             <h3 class="item-price">£X</h3>
         </div>
         <p class="item-description">TESTING</p>
