@@ -21,8 +21,8 @@ testBlock.innerHTML =
     `
     <div class="menu-line-one">
         <h3 class="item-name">${itemTitle}</h3>
-        <h3 class="item-price">${itemPrice}</h3>
+        <h3 class="item-price">£X</h3>
     </div>
-    <p class="item-description">${itemDescription}</p>
-    ${itemCode}
+    <p class="item-description">TESTING</p>
+    <!-- ${itemCode} -->
     `
