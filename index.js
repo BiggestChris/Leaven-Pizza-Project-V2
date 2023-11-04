@@ -14,7 +14,12 @@ const menuBlock = document.getElementById("menu-block");
 onValue(pizzaInDB, function(snapshot) {
 
     let itemsArray = Object.entries(snapshot.val())
-    console.log(itemsArray[0][1])
+    
+    itemsArray.sort(compareByOrder);
+
+    function compareByOrder(a, b) {
+        return a[1].order - b[1].order;
+    }
     
     for (let i = 0; i < itemsArray.length; i++) {
         let item = itemsArray[i][1];
